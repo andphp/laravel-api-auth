@@ -1,0 +1,29 @@
+{
+    "name": "andphp/laravel-api-auth",
+    "description": "laravel (>=8)",
+    "type": "library",
+    "require": {
+        "andphp/laravel-api-exception": "dev-master",
+        "firebase/php-jwt": ">=5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Da Xiong",
+            "email": "10000@andphp.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "AndPHP\\LaravelApiAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AndPHP\\LaravelApiAuth\\AndphpAuthServiceProvider"
+            ]
+        }
+    }
+}
